@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01SkladniaLINQ", "P01SkladniaLINQ\P01SkladniaLINQ.csproj", "{8A6657CF-9114-4800-A76B-C6C407DE4D74}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02ORM", "P02ORM\P02ORM.csproj", "{5DE196BA-7298-4360-84B0-B8C28EB038C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03AplikacjaZawodnicy", "P03AplikacjaZawodnicy\P03AplikacjaZawodnicy.csproj", "{DAD8A06C-7792-4684-92C2-2A48F0A973B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{8A6657CF-9114-4800-A76B-C6C407DE4D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A6657CF-9114-4800-A76B-C6C407DE4D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A6657CF-9114-4800-A76B-C6C407DE4D74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DE196BA-7298-4360-84B0-B8C28EB038C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DE196BA-7298-4360-84B0-B8C28EB038C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DE196BA-7298-4360-84B0-B8C28EB038C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DE196BA-7298-4360-84B0-B8C28EB038C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAD8A06C-7792-4684-92C2-2A48F0A973B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAD8A06C-7792-4684-92C2-2A48F0A973B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAD8A06C-7792-4684-92C2-2A48F0A973B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAD8A06C-7792-4684-92C2-2A48F0A973B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
