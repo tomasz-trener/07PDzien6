@@ -31,6 +31,7 @@ namespace P03AplikacjaZawodnicy
         {
             this.lbDane = new System.Windows.Forms.ListBox();
             this.btnWczytaj = new System.Windows.Forms.Button();
+            this.btnPDF = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbDane
@@ -51,11 +52,22 @@ namespace P03AplikacjaZawodnicy
             this.btnWczytaj.UseVisualStyleBackColor = true;
             this.btnWczytaj.Click += new System.EventHandler(this.btnWczytaj_Click);
             // 
+            // btnPDF
+            // 
+            this.btnPDF.Location = new System.Drawing.Point(188, 21);
+            this.btnPDF.Name = "btnPDF";
+            this.btnPDF.Size = new System.Drawing.Size(75, 23);
+            this.btnPDF.TabIndex = 2;
+            this.btnPDF.Text = "PDF";
+            this.btnPDF.UseVisualStyleBackColor = true;
+            this.btnPDF.Click += new System.EventHandler(this.btnPDF_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(354, 298);
+            this.ClientSize = new System.Drawing.Size(280, 298);
+            this.Controls.Add(this.btnPDF);
             this.Controls.Add(this.btnWczytaj);
             this.Controls.Add(this.lbDane);
             this.Name = "Form1";
@@ -68,6 +80,7 @@ namespace P03AplikacjaZawodnicy
 
         private System.Windows.Forms.ListBox lbDane;
         private System.Windows.Forms.Button btnWczytaj;
+        private System.Windows.Forms.Button btnPDF;
     }
 }
 

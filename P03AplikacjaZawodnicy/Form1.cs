@@ -14,6 +14,7 @@ namespace P03AplikacjaZawodnicy
 {
     public partial class Form1 : Form
     {
+        ZawodnicyOperation zawodnicyOperation = new ZawodnicyOperation();
         public Form1()
         {
             InitializeComponent();
@@ -24,11 +25,16 @@ namespace P03AplikacjaZawodnicy
             // lbDane.DataSource = new ModelBazyDanychDataContext().Zawodnik.ToArray();
             //lbDane.DisplayMember = "nazwisko";
 
-            ZawodnicyOperation zo = new ZawodnicyOperation();
-            var zawodnicy = zo.PodajZawodnikow();
+            zawodnicyOperation = new ZawodnicyOperation();
+            var zawodnicy = zawodnicyOperation.PodajZawodnikow();
 
             lbDane.DataSource = zawodnicy;
             lbDane.DisplayMember = "PodstawoweDane";
+        }
+
+        private void btnPDF_Click(object sender, EventArgs e)
+        {
+            zawodnicyOperation.WygenerujRaportPDF();
         }
     }
 }
