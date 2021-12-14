@@ -51,7 +51,10 @@ namespace P01SkladniaLINQ
 
             Zawodnik[] wynik5 = dane.Where(x => x.DataUr.Month % 2 == 0).ToArray();
 
-            // 
+            // 1) Wypisz zaawodników , których wzrost jest 2x większy niż waga
+            // 2) Wypisz zawodników, którzy mają czertoliterowe imie lub nazwisko
+            // 3) wypisz zawodników, którzych imie i nazwisko zaczyna się na tę samą literę
+            // 4) wypisz zawodników, którzy nie mają trenera 
         }
     }
 }
