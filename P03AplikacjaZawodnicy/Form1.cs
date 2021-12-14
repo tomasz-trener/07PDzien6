@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace P03AplikacjaZawodnicy
 {
@@ -35,6 +36,27 @@ namespace P03AplikacjaZawodnicy
         private void btnPDF_Click(object sender, EventArgs e)
         {
             zawodnicyOperation.WygenerujRaportPDF();
+        }
+
+        private void btnStrona_Click(object sender, EventArgs e)
+        { 
+            // string sciezka = System.Reflection.Assembly.GetEntryAssembly().Location; // razem z nazwą pliku
+            string sciezka = Application.StartupPath;
+            
+            webBrowser1.Navigate(sciezka + "\\HelloWorld.pdf");
+        }
+
+        private void btnWygenerujPodsumowanie_Click(object sender, EventArgs e)
+        {
+            chartZawodnicy.Series.Clear();
+
+            Series seria = new Series("wzrost");
+            seria.ChartType = SeriesChartType.Column;
+
+            var dw =  zawodnicyOperation.WygenerujDaneDoWykresu();
+
+            seria.Points.DataBindXY(dw.X, dw.Y);
+            chartZawodnicy.Series.Add(seria);
         }
     }
 }
